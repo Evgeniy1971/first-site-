@@ -1,0 +1,165 @@
+@font-face {
+    font-family: 'ofont.ru_Magnolia.ttf';
+    src: local(font/ofont.ru_Magnolia.ttf);
+}
+
+.container {
+    max-width: 750px;
+    margin: auto;
+    /* padding-top: 30px; */
+}
+
+body {
+    font-family: 'ofont.ru_Magnolia.ttf' , sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    background: #f1f1f1;
+    color: #0f141e;
+}
+
+/* верхний блок - общая информация */
+.avatar {
+    width: 200px;
+    border-radius: 28px;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, .25);
+}
+
+.info {
+    margin-bottom: 20px;
+    display: flex;
+}
+.info-text p {
+    font-style: italic;
+    font-weight: bold;
+    color: #86898f;
+    margin: 20px;
+}
+.info-text h1, hr {
+    margin-left: 20px;
+}
+@media (max-width: 590px) {
+    .info {
+        display: block;
+        text-align: center;
+    }
+}
+
+/* общие стили для списка, таблицы и формы */
+.card {
+    border-radius: 20px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+}
+.card h3 {
+    margin-bottom: 10px;
+}
+
+/* список хобби */
+.list {
+    padding: 0 20px;
+}
+.list li {
+    color: #86898f;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+}
+
+/* таблица "опыт работы" */
+.table {
+    width: 100%;
+    min-width: 530px;
+}
+.table td {
+    padding-bottom: 10px;
+}
+.table td:nth-child(2),
+.table td:nth-child(3) {
+    color: #86698f;
+}
+@media screen and (max-width: 590px) {
+    .table-box {
+        /*overflow: hidden;*/
+        overflow-x: scroll;
+    }
+}
+
+/* форма для отправки */
+.form h3 {
+    text-align: center;
+}
+.form-group label {
+    display: block;
+    font-size: 14px;
+    color: #86898f;
+}
+.form-group input, .form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid #ccc;
+    color: #000;
+    padding: 15px 0 10px;
+    outline: none;
+    font-family: inherit;
+}
+.form-row {
+    margin-bottom: 10px;
+    display: flex;
+}
+.form-row .form-group {
+    margin-right: 20px;
+    width: 50%;
+}
+@media (max-width: 590px) {
+    .form-row {
+        display: block;
+    }
+    .form-row .form-group {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+/* ссылка */
+a {
+    color: #000;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+a:active {
+    color: blue;
+}
+a:visited {
+    color: gray;
+}
+
+/* кнопка */
+.btn {
+    background: #111;
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-family: inherit;
+    cursor: pointer;
+}
+.btn:hover {
+    opacity: 0.8;
+}
+
+.bg-yellow {
+    background: #fff9dc;
+}
+
+.bg-red {
+    background: #ffe5e5;
+}
+
+.bg-green {
+    background: #e5ffe7;
+}
